@@ -1,0 +1,177 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+#sidebar {
+    width: 200px;
+}
+
+#content {
+    flex-grow: 1;
+}
+
+h2 {
+    color: #333;
+}
+
+.card h6 {
+    color: #6c757d;
+}
+
+.card h3 {
+    color: #333;
+}
+
+.table {
+    margin-top: 20px;
+    background-color: white;
+}
+
+.nav-tabs .nav-link.active {
+    color: #dc3545; /* Cor do texto do tab ativo */
+    border-color: #dc3545 #dc3545 #f8f9fa; /* Bordas do tab ativo */
+}
+
+.nav-tabs .nav-link {
+    color: #333;
+}
+
+.btn-outline-danger {
+    color: #dc3545;
+    border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+a.text-danger:hover {
+    color: #a71d2a;
+}
+
+nav flex-colun{
+    color: black;
+}
+/* Estilo para todos os links do menu */
+.nav-link {
+    color: #000; /* Preto */
+    text-decoration: none; /* Remove o sublinhado */
+}
+
+/* Estilo para o link ativo */
+.nav-link.active {
+    color: #000; /* Preto ou qualquer outra cor que desejar para o link ativo */
+}
+
+/* Estilo para quando o usuário passa o mouse sobre o link */
+.nav-link:hover {
+    color: #444; /* Cor mais escura ao passar o mouse (opcional) */
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse (opcional) */
+}
+/* Estilo base para todos os links do menu */
+.nav-link {
+    color: #000; /* Preto */
+    text-decoration: none; /* Remove o sublinhado */
+    padding: 10px 0; /* Espaçamento para o link */
+    display: block; /* Faz o link ocupar toda a área do item de menu */
+    position: relative; /* Necessário para a barra vermelha */
+}
+
+/* Estilo para o link ativo */
+.nav-link.active {
+    color: #000; /* Preto */
+}
+
+/* Estilo para o fundo branco do menu */
+.nav {
+    background-color: #fff; /* Fundo branco */
+    padding: 10px; /* Espaçamento ao redor dos itens do menu */
+}
+
+/* Estilo ao passar o mouse sobre o link */
+.nav-link:hover {
+    color: #e63946; /* Vermelho para o texto */
+    text-decoration: none; /* Sem sublinhado ao passar o mouse */
+}
+
+/* Estilo para a barra vermelha ao passar o mouse */
+.nav-link::after {
+    content: ''; /* Conteúdo vazio para criar a barra */
+    display: block;
+    width: 0;
+    height: 3px; /* Altura da barra */
+    background: #e63946; /* Cor da barra (vermelha) */
+    transition: width 0.3s ease-in-out; /* Animação suave para a barra */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Expande a barra ao passar o mouse */
+.nav-link:hover::after {
+    width: 100%; /* Barra ocupa toda a largura do link */
+}
+
+/* Estilo para os ícones ao passar o mouse */
+.nav-link:hover i {
+    color: #e63946; /* Vermelho para os ícones */
+}
+.sidebar {
+    background-color: #f8f9fa; /* Fundo claro */
+    padding: 20px;
+    width: 250px;
+    height: 100vh;
+}
+
+/* Estilo para a mensagem de status */
+.status-message {
+    color: #28a745; /* Verde para o texto "Loja aberta" */
+    font-weight: bold;
+}
+
+.status-description {
+    color: #6c757d; /* Cinza claro para a descrição */
+    font-size: 0.9rem;
+}
+
+/* Estilo para centralizar o conteúdo */
+.text-center {
+    text-align: center;
+}
+.status-container {
+    display: flex;
+    align-items: center;
+    background-color: #f3f3f3;
+    padding: 10px 15px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    width: fit-content;
+}
+
+.status-container i {
+    color: #27ae60; /* Cor verde para o ícone */
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.status-text {
+    display: flex;
+    flex-direction: column;
+    color: #333;
+}
+
+.status-text strong {
+    color: #27ae60;
+    font-size: 16px;
+}
+
+.status-text p {
+    font-size: 14px;
+    color: #999;
+    margin: 0;
+}
+
+
